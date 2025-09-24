@@ -1,9 +1,8 @@
 body {
     display: grid;
     grid-template-areas:
-        "header header header"
-        "left main right"
-        "footer footer footer";
+        "header"
+        "main"
     grid-template-columns: 200px 1fr 200px; /* left, main, right */
     grid-template-rows: auto 1fr auto;
     height: 100vh;
@@ -19,3 +18,8 @@ header {
     padding: 1rem;
 }
 
+main {
+    grid-area: main;
+    padding: 1.5rem;
+    background: #ffffff;
+}
