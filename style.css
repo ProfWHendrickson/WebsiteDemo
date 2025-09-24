@@ -10,3 +10,12 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
+header {
+    grid-area: header;
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
