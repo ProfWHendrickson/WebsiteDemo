@@ -1,13 +1,17 @@
 body {
     display: grid;
-    grid-template-areas:
-        "header"
-        "main";
-    grid-template-columns: 1fr; /* single column for main content */
-    grid-template-rows: auto 1fr; 
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+}
+
+main {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 1.5rem;
+    background: #ffffff;
 }
 
 header {
@@ -16,18 +20,5 @@ header {
     color: white;
     text-align: center;
     padding: 1rem;
-}
-
-main {
-    grid-area: main;
-    padding: 1.5rem;
-    background: #ffffff;
-
-    /* New properties to align content top-left */
-    display: flex;
-    flex-direction: column; /* stack elements vertically */
-    align-items: flex-start; /* align to left */
-    justify-content: flex-start; /* align to top */
-    gap: 1rem; /* optional spacing between sections */
 }
 
