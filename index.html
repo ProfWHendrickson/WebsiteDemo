@@ -10,14 +10,38 @@
     <h1>Website</h1>
 </header>
 
-    <main>
-        
-        <p>
-            Some Text
-    </main>
-    
-</p>
-</body>
+<main>
+    <!-- Greeting -->
+    <p id="greeting">Click the button to greet:</p>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="showGreeting()">Greet</button>
 
-  
+    <hr>
+
+    <!-- Login -->
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="passwd" placeholder="Password">
+    <button onclick="verifyAccount()">Login</button>
+
+    <hr>
+
+    <!-- Add and Square -->
+    <h2>Math Functions</h2>
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2">
+    <button onclick="showAdd()">Add</button>
+    <button onclick="showSquare()">Square Num1</button>
+    <p id="mathResult"></p>
+
+    <hr>
+
+    <!-- Counter -->
+    <h2>Counter</h2>
+    <h3 id="count">0</h3>
+    <button id="incrementBtn">Increment</button>
+</main>
+
+<script src="script.js"></script>
+</body>
 </html>
