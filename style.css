@@ -2,9 +2,9 @@ body {
     display: grid;
     grid-template-areas:
         "header"
-        "main"
-    grid-template-columns: 200px 1fr 200px; /* left, main, right */
-    grid-template-rows: auto 1fr auto;
+        "main";
+    grid-template-columns: 1fr; /* single column for main content */
+    grid-template-rows: auto 1fr; 
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -22,4 +22,12 @@ main {
     grid-area: main;
     padding: 1.5rem;
     background: #ffffff;
+
+    /* New properties to align content top-left */
+    display: flex;
+    flex-direction: column; /* stack elements vertically */
+    align-items: flex-start; /* align to left */
+    justify-content: flex-start; /* align to top */
+    gap: 1rem; /* optional spacing between sections */
 }
+
