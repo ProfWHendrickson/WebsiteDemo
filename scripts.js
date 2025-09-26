@@ -20,20 +20,14 @@ function square(x) {
   return x * x;
 }
 
-let count = 0;
-function IncrementCount()
-{
-      // Start with a number
-    let count = 0;
+let count = 0; // holds the number
 
-    // Get references to DOM elements
-    const countDisplay = document.getElementById("count");
-    const button = document.getElementById("incrementBtn");
+const countDisplay = document.getElementById("count"); // the <h1> showing the number
+const button = document.getElementById("incrementBtn"); // the button element
 
-    // Add a click event
-    button.addEventListener("click", () => {
-      count++; // increase by 1
-      countDisplay.textContent = count; // update the display
-    });
-}
+button.addEventListener("click", () => {
+  count++; // increment the number
+  countDisplay.textContent = count; // update the display
+});
+
 
